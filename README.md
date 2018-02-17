@@ -54,7 +54,7 @@ For more info about the system check the **systeminfo** folder
 - ~~notifications not showing up in window manager~~
 
 - fingerprint scanner not working
-- set brithness of display
+- set brightness of display
 - NVIDIA video card not working, currently running only integrated Intel card
 
 Check the **issues+fixes** folder for more details
