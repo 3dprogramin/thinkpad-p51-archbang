@@ -14,14 +14,12 @@ When it comes to linux, very easy to do it.
 
 ## Fix
 
-### Dependencies
-
 Install **tlp** and **tpacpi-bat**
 ```code
 sudo pacman -S tlp tpacpi-bat
 ```
 
-After the dependencies have been installed, you should see this path in the filesystem
+After the packages have been installed, you should see this path in the filesystem
 ```
 /sys/class/leds/tpacpi::kbd_backlight
 ```
