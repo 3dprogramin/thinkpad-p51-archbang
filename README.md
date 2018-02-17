@@ -59,3 +59,6 @@ For more info about the system check the **systeminfo** folder
 
 Check the **issues+fixes** folder for more details
 
+
+## License
+MIT
