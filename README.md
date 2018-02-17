@@ -55,7 +55,7 @@ For more info about the system check the **systeminfo** folder
 
 - fingerprint scanner not working
 - set brithness of display
-- NVIDIA video card not working, currently running only integratel Intel card
+- NVIDIA video card not working, currently running only integrated Intel card
 
 Check the **issues+fixes** folder for more details
 
