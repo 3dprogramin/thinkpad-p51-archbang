@@ -1,10 +1,10 @@
 ## Issue
------------------
+
 Touchpad buttons work, but tapping (apply pressure to it's surface) does 
 not.
 
 ## Fix
------------------
+
 Using **xorg-xinput** we'll be able to set some settings for the 
 touchpad, which are not available in the default archbang settings.
 

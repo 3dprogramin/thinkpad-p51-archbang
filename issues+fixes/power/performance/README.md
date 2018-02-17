@@ -1,5 +1,5 @@
 ## Issue
------------------
+
 No option by default to manage power.
 
 On windows, you can set certain power plans, for example, when on 
@@ -7,7 +7,7 @@ battery, to use CPU best speed, or when on battery, to save power
 instead of performing at maximum
 
 ## Fix
------------------
+
 We can achieve the same thing on linux
 
 For this, I've used **tlp** which is is a Linux advanced power manager.

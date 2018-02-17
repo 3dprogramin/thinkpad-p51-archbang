@@ -1,5 +1,5 @@
 ## Issue
------------------
+
 On windows, couldn't find a way to turn on/off the keyboard light programmatically/command-line
 
 The keyboard light can be enabled/disabled by pressing ***FN+Space*** on both operating systems, and it has 3 states:
@@ -13,7 +13,7 @@ When it comes to linux, very easy to do it.
 
 
 ## Fix
------------------
+
 ### Dependencies
 
 Install **tlp** and **tpacpi-bat**

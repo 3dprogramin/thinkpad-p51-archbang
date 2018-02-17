@@ -1,11 +1,11 @@
 ## Issue
------------------
+
 On windows, there's an application from Lenovo called Lenovo Vantage 
 from which you can set specific settings, including a start & stop 
 threashold for charging the battery
 
 ## Fix
------------------
+
 Fortunately for us, using **tlp**,  **acpi_call-lts** and **tpacpi-bat** 
 we'll be able to achieve the same thing
 

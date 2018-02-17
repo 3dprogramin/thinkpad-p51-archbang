@@ -1,9 +1,9 @@
 ## Issue
------------------
+
 PrtSc / Print key on keyboard does not take screenshot
 
 ## Fix
------------------
+
 We're going to fix this using **escrotum** and **obkey**
 
 Install them:

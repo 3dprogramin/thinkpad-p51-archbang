@@ -1,9 +1,9 @@
 ## Issue
------------------
+
 Mute mic button doesn't do anything
 
 ## Fix
------------------
+
 **alsamixer** allows us to toggle the mic 
 
 **obkey** will help us make a custom hotkey for our button
