@@ -1,5 +1,4 @@
 ## Lenovo ThinkPad P51 - ArchBang Linux OS - Issues & fixes
------------------
 
 Recently, I got a new laptop, [Lenovo ThinkPad P51](https://www3.lenovo.com/us/en/laptops/thinkpad/thinkpad-p/P51/p/22TP2WPWP51)
 
@@ -20,7 +19,7 @@ path, with this laptop.
 
 
 ## System Info
------------------------
+
 **Hardware**
 
 - Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
@@ -43,7 +42,6 @@ path, with this laptop.
 
 For more info about the system check the **systeminfo** folder
 
------------------------
 
 ## Issues
 
