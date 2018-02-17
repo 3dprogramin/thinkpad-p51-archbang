@@ -2,11 +2,8 @@
 
 Recently, I got a new laptop, [Lenovo ThinkPad P51](https://www3.lenovo.com/us/en/laptops/thinkpad/thinkpad-p/P51/p/22TP2WPWP51)
 
-Initially, it had 8GB and an SSD of 256. I upgraded it to 32GB and 
-another 1 TB SSD.
-
 Windows 10 Pro was preinstalled on it, and I did used it a few months 
-with Windows because I had to wait for the 1 TB SSD to arrive. Time come 
+with Windows because I had to wait the 1 TB SSD to arrive. Time came 
 though to install [ArchBang](https://sourceforge.net/projects/archbang/)
 , my favorite linux distro. Got dual-boot now, with the help of grub.
 
