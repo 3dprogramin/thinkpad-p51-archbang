@@ -12,7 +12,7 @@ but you do have to take care of your own dishes, and do some work to
 have everything into place.
 
 In this repo, you'll find issues & fixes that I've encountered in my 
-path, with this laptop.
+path, with this laptop and ArchBang linux.
 
 
 ## System Info
