@@ -1,16 +1,15 @@
 ## Lenovo ThinkPad P51 - ArchBang Linux OS - Issues & fixes
 -----------------
 
-Recently, I got a new laptop, [Lenovo ThinkPad P51] (https://www3.lenovo.com/us/en/laptops/thinkpad/thinkpad-p/P51/p/22TP2WPWP51)
+Recently, I got a new laptop, [Lenovo ThinkPad P51](https://www3.lenovo.com/us/en/laptops/thinkpad/thinkpad-p/P51/p/22TP2WPWP51)
 
 Initially, it had 8GB and an SSD of 256. I upgraded it to 32GB and 
 another 1 TB SSD.
 
 Windows 10 Pro was preinstalled on it, and I did used it a few months 
 with Windows because I had to wait for the 1 TB SSD to arrive. Time come 
-though to install [ArchBang] 
-(https://sourceforge.net/projects/archbang/), my favorite linux distro. 
-Got dual-boot now, with the help of grub.
+though to install [ArchBang](https://sourceforge.net/projects/archbang/)
+, my favorite linux distro. Got dual-boot now, with the help of grub.
 
 ArchBang is very lightweight, and has lots of advantages over Windows, 
 but you do have to take care of your own dishes, and do some work to 

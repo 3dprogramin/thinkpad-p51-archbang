@@ -29,7 +29,7 @@ This file contains the settings tlp is using in order to manage the
 power
 
 For more details about tlp check the 
-[docs] (http://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html)
+[docs](http://linrunner.de/en/tlp/docs/tlp-linux-advanced-power-management.html)
 
 --------------
 

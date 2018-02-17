@@ -9,7 +9,7 @@ Feb 17 15:25:27 p51 notify-osd[1751]: cannot open display:
 
 ## Fix
 -----------------
-Found the solution on [bbs.archlinux.org] (https://bbs.archlinux.org/viewtopic.php?id=224787)
+Found the solution on [bbs.archlinux.org](https://bbs.archlinux.org/viewtopic.php?id=224787)
 
 I personally, have added the line to 
 ```
