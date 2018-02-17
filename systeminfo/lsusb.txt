@@ -1,0 +1,8 @@
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 005: ID 138a:0097 Validity Sensors, Inc. 
+Bus 001 Device 004: ID 5986:111c Acer, Inc 
+Bus 001 Device 003: ID 6901:2701  
+Bus 001 Device 007: ID 8087:0a2b Intel Corp. 
+Bus 001 Device 006: ID 058f:9540 Alcor Micro Corp. AU9540 Smartcard Reader
+Bus 001 Device 002: ID 1d57:fa60 Xenta 
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub

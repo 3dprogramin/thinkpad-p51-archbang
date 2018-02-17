@@ -1,0 +1,283 @@
+p51
+    description: Computer
+    width: 4294967295 bits
+    capabilities: smp vsyscall32
+  *-core
+       description: Motherboard
+       physical id: 0
+     *-memory
+          description: System memory
+          physical id: 0
+          size: 31GiB
+     *-cpu
+          product: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
+          vendor: Intel Corp.
+          physical id: 1
+          bus info: cpu@0
+          size: 3681MHz
+          capacity: 3800MHz
+          width: 64 bits
+          capabilities: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp x86-64 constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp cpufreq
+     *-pci
+          description: Host bridge
+          product: Xeon E3-1200 v6/7th Gen Core Processor Host Bridge/DRAM Registers
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 05
+          width: 32 bits
+          clock: 33MHz
+        *-pci:0
+             description: PCI bridge
+             product: Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor PCIe Controller (x16)
+             vendor: Intel Corporation
+             physical id: 1
+             bus info: pci@0000:00:01.0
+             version: 05
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:16 ioport:d000(size=4096) memory:eb000000-ec0fffff ioport:c0000000(size=301989888)
+           *-display
+                description: VGA compatible controller
+                product: GM107GLM [Quadro M1200 Mobile]
+                vendor: NVIDIA Corporation
+                physical id: 0
+                bus info: pci@0000:01:00.0
+                version: a2
+                width: 64 bits
+                clock: 33MHz
+                capabilities: vga_controller bus_master cap_list rom
+                configuration: driver=nouveau latency=0
+                resources: irq:136 memory:eb000000-ebffffff memory:c0000000-cfffffff memory:d0000000-d1ffffff ioport:d000(size=128) memory:ec000000-ec07ffff
+        *-generic:0 UNCLAIMED
+             description: System peripheral
+             product: Xeon E3-1200 v5/v6 / E3-1500 v5 / 6th/7th Gen Core Processor Gaussian Mixture Model
+             vendor: Intel Corporation
+             physical id: 8
+             bus info: pci@0000:00:08.0
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: latency=0
+             resources: iomemory:2f0-2ef memory:2ff2018000-2ff2018fff
+        *-usb
+             description: USB controller
+             product: Sunrise Point-H USB 3.0 xHCI Controller
+             vendor: Intel Corporation
+             physical id: 14
+             bus info: pci@0000:00:14.0
+             version: 31
+             width: 64 bits
+             clock: 33MHz
+             capabilities: xhci bus_master cap_list
+             configuration: driver=xhci_hcd latency=0
+             resources: irq:123 memory:ed820000-ed82ffff
+        *-generic:1
+             description: Signal processing controller
+             product: Sunrise Point-H Thermal subsystem
+             vendor: Intel Corporation
+             physical id: 14.2
+             bus info: pci@0000:00:14.2
+             version: 31
+             width: 64 bits
+             clock: 33MHz
+             capabilities: cap_list
+             configuration: driver=intel_pch_thermal latency=0
+             resources: iomemory:2f0-2ef irq:19 memory:2ff2017000-2ff2017fff
+        *-generic:2
+             description: Signal processing controller
+             product: Sunrise Point-H Serial IO I2C Controller #0
+             vendor: Intel Corporation
+             physical id: 15
+             bus info: pci@0000:00:15.0
+             version: 31
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=intel-lpss latency=0
+             resources: iomemory:2f0-2ef irq:16 memory:2ff2016000-2ff2016fff
+        *-communication
+             description: Communication controller
+             product: Sunrise Point-H CSME HECI #1
+             vendor: Intel Corporation
+             physical id: 16
+             bus info: pci@0000:00:16.0
+             version: 31
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=mei_me latency=0
+             resources: iomemory:2f0-2ef irq:122 memory:2ff2015000-2ff2015fff
+        *-storage
+             description: SATA controller
+             product: Sunrise Point-H SATA controller [AHCI mode]
+             vendor: Intel Corporation
+             physical id: 17
+             bus info: pci@0000:00:17.0
+             version: 31
+             width: 32 bits
+             clock: 66MHz
+             capabilities: storage ahci_1.0 bus_master cap_list
+             configuration: driver=ahci latency=0
+             resources: irq:124 memory:ed834000-ed835fff memory:ed837000-ed8370ff ioport:e040(size=8) ioport:e048(size=4) ioport:e020(size=32) memory:ed836000-ed8367ff
+        *-pci:1
+             description: PCI bridge
+             product: Sunrise Point-H PCI Express Root Port #1
+             vendor: Intel Corporation
+             physical id: 1c
+             bus info: pci@0000:00:1c.0
+             version: f1
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode cap_list
+             configuration: driver=pcieport
+             resources: irq:16 ioport:c000(size=4096) memory:ece00000-ed7fffff ioport:ec100000(size=10485760)
+        *-pci:2
+             description: PCI bridge
+             product: Sunrise Point-H PCI Express Root Port #3
+             vendor: Intel Corporation
+             physical id: 1c.2
+             bus info: pci@0000:00:1c.2
+             version: f1
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:18 memory:ecd00000-ecdfffff
+           *-network
+                description: Wireless interface
+                product: Wireless 8265 / 8275
+                vendor: Intel Corporation
+                physical id: 0
+                bus info: pci@0000:04:00.0
+                logical name: wlp4s0
+                version: 78
+                serial: bc:a8:a6:bf:f6:f3
+                width: 64 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list ethernet physical wireless
+                configuration: broadcast=yes driver=iwlwifi driverversion=4.14.19-1-lts firmware=34.0.1 ip=192.168.1.18 latency=0 link=yes multicast=yes wireless=IEEE 802.11
+                resources: irq:134 memory:ecd00000-ecd01fff
+        *-pci:3
+             description: PCI bridge
+             product: Sunrise Point-H PCI Express Root Port #5
+             vendor: Intel Corporation
+             physical id: 1c.4
+             bus info: pci@0000:00:1c.4
+             version: f1
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode cap_list
+             configuration: driver=pcieport
+             resources: irq:16 ioport:2000(size=4096) memory:d4000000-ea0fffff ioport:2fd0000000(size=570425344)
+        *-pci:4
+             description: PCI bridge
+             product: Sunrise Point-H PCI Express Root Port #9
+             vendor: Intel Corporation
+             physical id: 1d
+             bus info: pci@0000:00:1d.0
+             version: f1
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:16 memory:ecc00000-eccfffff
+           *-storage
+                description: Non-Volatile memory controller
+                product: NVMe SSD Controller SM961/PM961
+                vendor: Samsung Electronics Co Ltd
+                physical id: 0
+                bus info: pci@0000:3e:00.0
+                version: 00
+                width: 64 bits
+                clock: 33MHz
+                capabilities: storage nvm_express bus_master cap_list
+                configuration: driver=nvme latency=0
+                resources: irq:16 memory:ecc00000-ecc03fff
+        *-pci:5
+             description: PCI bridge
+             product: Sunrise Point-H PCI Express Root Port #13
+             vendor: Intel Corporation
+             physical id: 1d.4
+             bus info: pci@0000:00:1d.4
+             version: f1
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:16 memory:ecb00000-ecbfffff
+           *-generic
+                description: Unassigned class
+                product: RTS525A PCI Express Card Reader
+                vendor: Realtek Semiconductor Co., Ltd.
+                physical id: 0
+                bus info: pci@0000:3f:00.0
+                version: 01
+                width: 32 bits
+                clock: 33MHz
+                capabilities: bus_master cap_list
+                configuration: driver=rtsx_pci latency=0
+                resources: irq:121 memory:ecb00000-ecb00fff
+        *-isa
+             description: ISA bridge
+             product: Sunrise Point-H LPC Controller
+             vendor: Intel Corporation
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 31
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master
+             configuration: latency=0
+        *-memory UNCLAIMED
+             description: Memory controller
+             product: Sunrise Point-H PMC
+             vendor: Intel Corporation
+             physical id: 1f.2
+             bus info: pci@0000:00:1f.2
+             version: 31
+             width: 32 bits
+             clock: 33MHz (30.3ns)
+             configuration: latency=0
+             resources: memory:ed830000-ed833fff
+        *-multimedia
+             description: Audio device
+             product: CM238 HD Audio Controller
+             vendor: Intel Corporation
+             physical id: 1f.3
+             bus info: pci@0000:00:1f.3
+             version: 31
+             width: 64 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list
+             configuration: driver=snd_hda_intel latency=64
+             resources: iomemory:2f0-2ef iomemory:2f0-2ef irq:125 memory:2ff2010000-2ff2013fff memory:2ff2000000-2ff200ffff
+        *-serial
+             description: SMBus
+             product: Sunrise Point-H SMBus
+             vendor: Intel Corporation
+             physical id: 1f.4
+             bus info: pci@0000:00:1f.4
+             version: 31
+             width: 64 bits
+             clock: 33MHz
+             configuration: driver=i801_smbus latency=0
+             resources: iomemory:2f0-2ef irq:16 memory:2ff2014000-2ff20140ff ioport:efa0(size=32)
+        *-network
+             description: Ethernet interface
+             product: Ethernet Connection (5) I219-V
+             vendor: Intel Corporation
+             physical id: 1f.6
+             bus info: pci@0000:00:1f.6
+             logical name: enp0s31f6
+             version: 31
+             serial: 54:e1:ad:8d:49:a5
+             capacity: 1Gbit/s
+             width: 32 bits
+             clock: 33MHz
+             capabilities: bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt-fd autonegotiation
+             configuration: autonegotiation=on broadcast=yes driver=e1000e driverversion=3.2.6-k firmware=0.1-3 latency=0 link=no multicast=yes port=twisted pair
+             resources: irq:126 memory:ed800000-ed81ffff

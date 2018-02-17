@@ -1,0 +1,1 @@
+Linux p51 4.14.19-1-lts #1 SMP Tue Feb 13 13:11:52 CET 2018 x86_64 GNU/Linux
