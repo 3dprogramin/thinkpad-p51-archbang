@@ -29,7 +29,7 @@ Inside it should be multiple files, including ***brightness*** and ***max_bright
 ### Usage
 In order to change the brightness, you'll have to change the value inside the brightness file.
 
-This can be easily achieved with an echo
+This can be easily achieved with an echo but you do have to be root
 
 ```bash
 sudo su		# switch to root
