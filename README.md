@@ -47,7 +47,7 @@ For more info about the system check the **systeminfo** folder
 
 - ~~touchpad click/natural scroll not working~~
 - ~~select (home, end) with numpad not working~~
-- ~~mute button not working~~
+- ~~mute mic button not working~~
 - ~~print button not taking screenshot~~
 - ~~set backlight of keyboard programmatically~~
 
