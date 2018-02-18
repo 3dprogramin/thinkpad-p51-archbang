@@ -7,7 +7,7 @@ with Windows because I had to wait the 1 TB SSD to arrive. Time came
 though to install [ArchBang](https://sourceforge.net/projects/archbang/)
 , my favorite linux distro. Got dual-boot now, with the help of grub.
 
-ArchBang is very lightweight, and has lots of advantages over Windows, 
+ArchBang is very lightweight OS, and has lots of advantages over Windows, 
 but you do have to take care of your own dishes, and do some work to 
 have everything into place.
 
