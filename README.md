@@ -42,10 +42,10 @@ For more info about the system check the **systeminfo** folder
 
 ## Issues
 
-- ~~set performance/saving~~
+- ~~set performance/battery saving~~
 - ~~set battery threshold~~
 
-- ~~touchpad click/natural scroll not working~~
+- ~~touchpad tapping & natural scroll not working~~
 - ~~select (home, end) with numpad not working~~
 - ~~mute mic button not working~~
 - ~~print button not taking screenshot~~
