@@ -105,3 +105,6 @@ Now, we should have our Intel card being our primary graphics card, and NVIDIA c
 <img src="https://image.ibb.co/jWbfF7/nvidia.png" title="optirun glxspheres64">
 </p>
 
+
+From the screenshots, it can be seen that the NVIDIA card performs almost 10
+times better, when it comes to rendering
