@@ -104,7 +104,7 @@ Now, we should have our Intel card being our primary graphics card, and NVIDIA c
 
 `optirun glxspheres64`
 
-<img src="https://image.ibb.co/jWbfF7/nvidia.png" title="optirun glxspheres64">
+<img width="50%" height="50%" src="https://image.ibb.co/jWbfF7/nvidia.png" title="optirun glxspheres64">
 </p>
 
 
