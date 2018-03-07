@@ -59,6 +59,7 @@ For more info about the system check the **systeminfo** folder
 
 - ~~NVIDIA card works now, but intel doesn't, getting bumblebee working is the next step~~
 
+- NVIDIA card (optirun/primusrun) not working after getting out of RAM suspend
 - fingerprint scanner not working - although there is a prototype available
 
 Check the **issues+fixes** folder for more details
