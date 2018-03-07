@@ -181,4 +181,6 @@ With the help of [bbswitch](https://wiki.archlinux.org/index.php/Bumblebee#Power
 - reboot
 - That's it !
 
-Now, the card should be disabled from boot. When we run `primusrun` or `optirun` card will start and we can use it as before. This is great, because it saves up battery power !
+Now, the card should be disabled from boot. When we run `primusrun` or `optirun` card will start and we can use it as before. 
+When the primusrun process finishes, the card gets shutdown.
+This is great, because it saves up battery power !
