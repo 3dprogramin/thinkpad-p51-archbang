@@ -114,7 +114,9 @@ From the screenshots, it can be seen that the NVIDIA card performs
 primusrun
 -----
 
-After reading more into the bumblebee docs, I stumbled upon [primusrun](https://wiki.archlinux.org/index.php/Bumblebee#Primusrun). It's an alternative to `optirun` (at least how I see it), and runs much better.
+After reading more into the bumblebee docs, I stumbled upon 
+[primusrun](https://wiki.archlinux.org/index.php/Bumblebee#Primusrun). 
+It's a drop-in replacement for `optirun`, and runs much better.
 
 Install the `primus ` package
 
