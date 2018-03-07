@@ -90,6 +90,8 @@ To have the ability to switch between cards, we're going to use [bumblebee](http
 
 - reboot
 
+- make sure Hybrid graphics is enabled in BIOS
+
 Now, we should have our Intel card being our primary graphics card, and NVIDIA card can be used when needed with `optirun`
 
 ### Screenshots using `glxspheres64`
