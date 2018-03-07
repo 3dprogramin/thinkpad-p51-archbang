@@ -92,10 +92,12 @@ To have the ability to switch between cards, we're going to use [bumblebee](http
 
 Now, we should have our Intel card being our primary graphics card, and NVIDIA card can be used when needed with `optirun`
 
-> Screenshots using `glxspheres64`
+### Screenshots using `glxspheres64`
 
 <p float="left">
+#### `glxspheres64`
 <img src="https://image.ibb.co/cB0CTS/intel.png" title="glxspheres64">
+#### `optirun glxspheres64`
 <img src="https://image.ibb.co/jWbfF7/nvidia.png" title="optirun glxspheres64">
 </p>
 
