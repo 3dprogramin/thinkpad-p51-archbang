@@ -186,3 +186,26 @@ With the help of [bbswitch](https://wiki.archlinux.org/index.php/Bumblebee#Power
 Now, the card should be disabled from boot. When we run `primusrun` or `optirun` card will start and we can use it as before. 
 When the primusrun process finishes, the card gets shutdown.
 This is great, because it saves up battery power !
+
+
+Issue 2
+-----
+
+The problem I've got now is that when laptop gets out of RAM suspend, I'm getting the following errors:
+
+```
+Mar 07 19:30:42 p51 kernel: nvidia-nvlink: Nvlink Core is being initialized, major device number 237
+Mar 07 19:30:42 p51 kernel: NVRM: The NVIDIA GPU 0000:01:00.0
+                            NVRM: (PCI ID: 10de:13b6) installed in this system has
+                            NVRM: fallen off the bus and is not responding to commands.
+Mar 07 19:30:42 p51 kernel: nvidia: probe of 0000:01:00.0 failed with error -1
+Mar 07 19:30:42 p51 kernel: NVRM: The NVIDIA probe routine failed for 1 device(s).
+Mar 07 19:30:42 p51 kernel: NVRM: None of the NVIDIA graphics adapters were initialized!
+Mar 07 19:30:42 p51 kernel: nvidia-nvlink: Unregistered the Nvlink Core, major device number 237
+```
+
+The problem seems to occur only when optirun or primus was started (card was loaded). 
+If card is not loaded, errors won't show after suspend.
+
+For now, it's important to not suspend it when card is/was used. Or if it was, and you want 
+to suspend, give a restart before.
