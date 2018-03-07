@@ -55,8 +55,11 @@ For more info about the system check the **systeminfo** folder
 
 - ~~set brightness of display~~
 
+- ~~- NVIDIA video card not working, currently running only integrated Intel card~~
+
+- NVIDIA card works now, getting bumblebee working is the next step
+
 - fingerprint scanner not working
-- NVIDIA video card not working, currently running only integrated Intel card
 
 Check the **issues+fixes** folder for more details
 
