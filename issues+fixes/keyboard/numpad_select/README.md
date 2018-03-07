@@ -1,7 +1,7 @@
 ## Issue
 
 When numpad is disabled (digits don't work, but arrows and home, end,etc) the arrows and other keys
-inside numpad work fine, but when it comes to making selection 
+inside numpad work fine, but when it comes to selecting text, it doesn't
 
 ## Fix
 
