@@ -9,7 +9,8 @@ Will be starting with the arch docs on NVIDIA.
 Fix
 -----
 
-#### It's important to read first the documentation from arch website. Most importantly, you should read this [NVIDIA](https://wiki.archlinux.org/index.php/NVIDIA), [NVIDIA Optimus](https://wiki.archlinux.org/index.php/NVIDIA_Optimus) 
+#### It's important to read the documentation from arch website first.
+### Most importantly, you should read this [NVIDIA](https://wiki.archlinux.org/index.php/NVIDIA), [NVIDIA Optimus](https://wiki.archlinux.org/index.php/NVIDIA_Optimus) 
 The links above are very important, because depending on your card, you might need different drivers, although for ThinkPad P51, this should work without any problems.
 
 ---------------------

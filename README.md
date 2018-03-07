@@ -59,7 +59,7 @@ For more info about the system check the **systeminfo** folder
 
 - NVIDIA card works now, getting bumblebee working is the next step
 
-- fingerprint scanner not working
+- fingerprint scanner not working - although there is a prototype available
 
 Check the **issues+fixes** folder for more details
 
