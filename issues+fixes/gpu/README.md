@@ -107,4 +107,4 @@ Now, we should have our Intel card being our primary graphics card, and NVIDIA c
 
 
 From the screenshots, it can be seen that the NVIDIA card performs
-almost **10 times better**, when it comes to rendering !
+**almost 10 times better**, when it comes to rendering !
