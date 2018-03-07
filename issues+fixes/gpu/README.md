@@ -133,6 +133,40 @@ In this way, the results should be the following:
 
 ### This gives us at least another 100+ frames/second !
 
+> log from glxspheres64
+```
+636.772197 frames/sec - 710.637771 Mpixels/sec
+645.447755 frames/sec - 720.319695 Mpixels/sec
+728.442861 frames/sec - 812.942233 Mpixels/sec
+728.563571 frames/sec - 813.076945 Mpixels/sec
+728.559144 frames/sec - 813.072005 Mpixels/sec
+730.932558 frames/sec - 815.720735 Mpixels/sec
+729.546110 frames/sec - 814.173459 Mpixels/sec
+730.789787 frames/sec - 815.561402 Mpixels/sec
+730.841349 frames/sec - 815.618945 Mpixels/sec
+889.795599 frames/sec - 993.011889 Mpixels/sec
+1115.304955 frames/sec - 1244.680330 Mpixels/sec
+1126.529438 frames/sec - 1257.206853 Mpixels/sec
+1119.462634 frames/sec - 1249.320299 Mpixels/sec
+1107.358884 frames/sec - 1235.812515 Mpixels/sec
+1111.568020 frames/sec - 1240.509910 Mpixels/sec
+687.559364 frames/sec - 767.316251 Mpixels/sec
+727.304922 frames/sec - 811.672293 Mpixels/sec
+732.618870 frames/sec - 817.602659 Mpixels/sec
+727.277619 frames/sec - 811.641823 Mpixels/sec
+729.054152 frames/sec - 813.624433 Mpixels/sec
+730.833603 frames/sec - 815.610301 Mpixels/sec
+730.784901 frames/sec - 815.555950 Mpixels/sec
+726.220850 frames/sec - 810.462468 Mpixels/sec
+733.658381 frames/sec - 818.762753 Mpixels/sec
+726.581908 frames/sec - 810.865409 Mpixels/sec
+727.875052 frames/sec - 812.308558 Mpixels/sec
+729.220413 frames/sec - 813.809981 Mpixels/sec
+728.455625 frames/sec - 812.956478 Mpixels/sec
+729.690417 frames/sec - 814.334506 Mpixels/sec
+...
+```
+
 Power management
 ----------
 
