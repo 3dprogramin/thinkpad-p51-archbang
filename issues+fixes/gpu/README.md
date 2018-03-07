@@ -100,7 +100,7 @@ Now, we should have our Intel card being our primary graphics card, and NVIDIA c
 
 `glxspheres64`
 
-<img src="https://image.ibb.co/cB0CTS/intel.png" title="glxspheres64">
+<img width="50%" height="50%" src="https://image.ibb.co/cB0CTS/intel.png" title="glxspheres64">
 
 `optirun glxspheres64`
 
@@ -110,3 +110,41 @@ Now, we should have our Intel card being our primary graphics card, and NVIDIA c
 
 From the screenshots, it can be seen that the NVIDIA card performs
 **almost 10 times better**, when it comes to rendering !
+
+primusrun
+-----
+
+After reading more into the bumblebee docs, I stumbled upon [primusrun](https://wiki.archlinux.org/index.php/Bumblebee#Primusrun). It's an alternative to `optirun` (at least how I see it), and runs much better.
+
+Install the `primus ` package
+
+With the default settings, running `primus glxshperes64` is giving me very low results. That's because primus should be ran without any window managers running, and I am running openbox. 
+
+[Solution](https://wiki.archlinux.org/index.php/Bumblebee#Primusrun_mouse_delay_.28disable_VSYNC.29) is very easy though, run the command like this: `vblank_mode=0 primusrun glxspheres64`
+
+In this way, the results should be the following:
+
+<p float="left">
+
+`primusrun glxspheres64`
+
+<img width="50%" height="50%" src="https://image.ibb.co/fTjOk7/primusrun.png" title="primusrun glxspheres64">
+</p>
+
+### This gives us at least another 100+ frames/second !
+
+Power management
+----------
+
+In terms of power, now both cards are **up**, although the NVIDIA card is used only when we need to render, it runs all the time, even when we don't render. Most of the time it's < 1% but we would like to shut it down completly when we don't use it, so we save some battery power.
+
+With the help of [bbswitch](https://wiki.archlinux.org/index.php/Bumblebee#Power_management) it's very easy to turn the card on/off.
+
+### Install
+
+- Install the package `bbswitch` or `bbswitch-dkms` (for lts kernel)
+- Create a file (if it doesn't exist already) named `/etc/modprobe.d/bbswitch.conf` with the following content: `options bbswitch load_state=0 unload_state=1`
+- reboot
+- That's it !
+
+Now, the card should be disabled from boot. When we run `primusrun` or `optirun` card will start and we can use it as before. This is great, because it saves up battery power !
