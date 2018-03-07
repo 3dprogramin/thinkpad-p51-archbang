@@ -13,4 +13,4 @@ The prototype can be found [here](https://github.com/nmikhailov/Validity90/tree/
 Currently, it can scan your fingerprint and match previous (probably comming from windows) scans
 and you can test the LEDs
 
-Now a solution for now, but looks very promising
+Not a solution for now, but looks very promising

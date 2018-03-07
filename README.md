@@ -55,7 +55,7 @@ For more info about the system check the **systeminfo** folder
 
 - ~~set brightness of display~~
 
-- ~~- NVIDIA video card not working, currently running only integrated Intel card~~
+- ~~NVIDIA video card not working, currently running only integrated Intel card~~
 
 - NVIDIA card works now, getting bumblebee working is the next step
 
