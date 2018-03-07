@@ -96,7 +96,9 @@ Now, we should have our Intel card being our primary graphics card, and NVIDIA c
 
 <p float="left">
 
-<p align="center">`glxspheres64`</p>
+<p align="center">
+`glxspheres64`
+</p>
 
 <img src="https://image.ibb.co/cB0CTS/intel.png" title="glxspheres64">
 
