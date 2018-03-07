@@ -57,7 +57,7 @@ For more info about the system check the **systeminfo** folder
 
 - ~~NVIDIA video card not working, currently running only integrated Intel card~~
 
-- NVIDIA card works now, getting bumblebee working is the next step
+- ~~NVIDIA card works now, but intel doesn't, getting bumblebee working is the next step~~
 
 - fingerprint scanner not working - although there is a prototype available
 

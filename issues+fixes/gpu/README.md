@@ -1,32 +1,41 @@
 Issue
 ---
-Getting the NVIDIA graphics card working on linux is usually a \`hard\` job to do. In the past, I managed to get my card from previous laptop working on kali linux, but after following a LONG tutorial.
+Getting the NVIDIA graphics card working on linux is usually a \`hard\` task to achieve. In the past, I managed to get my NVIDIA card (from previous laptop) working on kali linux, but after lots of testing and following a LONG tutorial.
 
 This time, decided to start from the bottom, and go one step at the time.
 
-Will be starting with the arch docs on NVIDIA.
+The arch documentation is one of the best you can find on-line, so that's how I'll start.
 
 Fix
 -----
 
 #### It's important to read the documentation from arch website first.
-### Most importantly, you should read this [NVIDIA](https://wiki.archlinux.org/index.php/NVIDIA), [NVIDIA Optimus](https://wiki.archlinux.org/index.php/NVIDIA_Optimus) 
-The links above are very important, because depending on your card, you might need different drivers, although for ThinkPad P51, this should work without any problems.
+### Most importantly, you should read this [NVIDIA](https://wiki.archlinux.org/index.php/NVIDIA), [NVIDIA Optimus](https://wiki.archlinux.org/index.php/NVIDIA_Optimus), [Bumblebee](https://wiki.archlinux.org/index.php/Bumblebee)
+The links above are very important, because depending on your card, you might need different drivers, although for ThinkPad P51, what you'll read below should work without problems.
 
 ---------------------
 
 
 
-- `sudo pacman -S nvidia-lts lib32-nvidia-utils nvidia-settings`
+- Install the driver: `sudo pacman -S nvidia-lts lib32-nvidia-utils nvidia-settings`
+
+- Add a [pacman hook](https://wiki.archlinux.org/index.php/NVIDIA#Pacman_hook) in order for the initframs to update when the driver updates
+
 - reboot
 
-- `sudo nvidia-xconfig` - this creats a  Xorg config file, /etc/X11/Xorg.conf
+- `sudo nvidia-xconfig` - this creates a  Xorg config file, /etc/X11/Xorg.conf
 
-- NVIDIA driver in use at this point `lspci -v`, but problem is some fonts are way too big, this is because of edid dpi option
+- add 2 lines to the bottom of the `~/.xinitrc` file like [NVIDIA_Optimus#Using_nvidia](https://wiki.archlinux.org/index.php/NVIDIA_Optimus#Using_nvidia)
 
--  `sudo nvidia-xconfig --no-use-edid-dpi` - regenerate the Xorg config, without edid
+- reboot
 
-- Now, our fonts are a bit too small ... to fix it, I've installed some xorg fonts pacakges
+- NVIDIA driver should be in use at this point, `lspci -v` to confirm, but problem is some fonts are way too big, this is because of edid dpi option
+
+- Booting was possible only with Hybrid graphics card option set in BIOS at this point. Discrete wasn't booting (possibly even after step 2)
+
+- `sudo nvidia-xconfig --no-use-edid-dpi` - regenerate the Xorg config, without edid
+
+- Now, our fonts are a bit too small ... to fix it, I've installed some xorg fonts packages
 
 ```
 xorg-font-util 1.3.1-1
@@ -37,7 +46,7 @@ xorg-fonts-alias 1.0.3-1
 xorg-fonts-encodings 1.0.4-4
 xorg-fonts-type1 7.7-2
 ```
-I've installed this because there were errors about most of them in `/var/log/Xorg.0.log`
+I installed those because there were errors about most of them in `/var/log/Xorg.0.log`
 
 
 
@@ -60,12 +69,33 @@ EndSection
 
 ### NVIDIA card works !
 
-#### Tested with blender, speed almost double than CPU !
 
-#### Next step would be to get bumblebee running.
+#### Tested with blender, speed is more then double compared to CPU !
 
-There is one downside (yet) though. NVIDIA card is used by display as well. We would need the integrated card to take care of display and NVIDIA only for rendering.
+--------------------
 
-In this way, we can save power in a more efficient way.
+## Switch between cards
 
-This should be achievable with bumblebee. Will get to it soon
+We've achieved our goal, at least half of it. The point was to get NVIDIA card working, but we do want to have the Intel card do most of the work, such as showing screen/display, playing videos, etc.
+
+Currently, our NVIDIA card does all the work. 
+
+To have the ability to switch between cards, we're going to use [bumblebee](https://wiki.archlinux.org/index.php/Bumblebee)
+
+- Install bumblebee `sudo pacman -S bumblebee` and other needed packages - more info: [Bumblebee#Installation](https://wiki.archlinux.org/index.php/bumblebee#Installation)
+
+- Add your user to bumblebee group: `sudo gpasswd -a your_user bumblebee`
+
+- Enable service: `systemctl enable bumblebeed.service`
+
+- reboot
+
+Now, we should have our Intel card being our primary graphics card, and NVIDIA card can be used when needed with `optirun`
+
+> Screenshots using `glxspheres64`
+
+<p float="left">
+<img src="https://image.ibb.co/cB0CTS/intel.png" title="glxspheres64">
+<img src="https://image.ibb.co/jWbfF7/nvidia.png" title="optirun glxspheres64">
+</p>
+
