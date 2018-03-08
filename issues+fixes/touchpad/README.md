@@ -142,3 +142,9 @@ properties at startup, each time.
 The init-touchpad.sh contains the options I've set myself, and I'm 
 running it as a service at startup. ***~/.config/openbox/autostart*** 
 will do the job as well.
+
+
+TrackPoint
+--------
+
+Updated the bash file to set acceleration of .3 to trackpoint
