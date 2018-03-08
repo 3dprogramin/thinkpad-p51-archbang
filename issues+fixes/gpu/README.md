@@ -231,6 +231,6 @@ This is not a problem for me though, since I don't use the card that often, and 
 Closer inspection
 -------
 
-After looking more closely at `journalctl` looks like the argument is enabling the
-card on suspension and disabling it on resume. Which makes sense why the card is not 
-working anymore, if it's enabled while suspension.
+After looking more closely at `journalctl` looks like the kernel argument makes bbswitch 
+enable the card on suspension and disable it on resume. Which makes sense why the card is not 
+working anymore, if it's enabled/working while suspension.
