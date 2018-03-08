@@ -36,3 +36,13 @@ sudo su		# switch to root
 echo 1 > /sys/class/leds/tpacpi::kbd_backlight/brightness	# enable (low light)
 echo 2 > /sys/class/leds/tpacpi::kbd_backlight/brightness	# enable (strong light)
 ```
+
+## Reboot
+
+Luckly for us, looks like the backlight persists between reboots.
+This was different on windows, it wasn't persistent.
+
+When system is suspended to RAM, backlight does not persist.
+
+I've tried to use systemd with suspend and resume services, but looks like the light is disabled before
+the suspend scripts gets a change to get the value.
