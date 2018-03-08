@@ -59,7 +59,7 @@ For more info about the system check the **systeminfo** folder
 - ~~NVIDIA card works now, but intel doesn't, getting bumblebee working is the next step~~
 - ~~* NVIDIA card (optirun/primusrun) not working after getting out of RAM suspend~~
 
-- ~~'A start job is running for enp0s31f6'~~
+- ~~'A start job is running for enp0s31f6...'~~
 
 
 - fingerprint scanner not working - although there is a prototype available [here](https://github.com/nmikhailov/Validity90/tree/master/prototype)
