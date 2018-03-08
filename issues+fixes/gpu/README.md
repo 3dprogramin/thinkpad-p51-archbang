@@ -204,8 +204,26 @@ Mar 07 19:30:42 p51 kernel: NVRM: None of the NVIDIA graphics adapters were init
 Mar 07 19:30:42 p51 kernel: nvidia-nvlink: Unregistered the Nvlink Core, major device number 237
 ```
 
-The problem seems to occur only when optirun or primus was started (card was loaded). 
-If card is not loaded, errors won't show after suspend.
+~~The problem seems to occur only when optirun or primus was started (card was loaded). 
+If card is not loaded, errors won't show after suspend.~~
 
-For now, it's important to not suspend it when card is/was used. Or if it was, and you want 
-to suspend, give a restart before.
+After more testing, problem occurs even when card is not loaded, and laptop gets suspended. Errors can be checked with `journalctl -f`. In my case, randomly, errors were showing after suspending, around 1/5 cases when card wasn't loaded. If card was loaded, 5/5. When it happens though, it's kind of bad. Errors above are not showing only once, but few times every second, which is def not good.
+
+
+## Fix
+
+Tried all type of things to get this one going ... playing with bbswitch and bumblebee's config, running a service on suspend, etc and not seem to work, until I read [this](https://forums.gentoo.org/viewtopic-p-8129614.html?sid=f84d3c11ffe41e66c3905cb5ca3cf5b5)
+
+In short, the solution is this:
+
+- add `pcie_port_pm=off` to `/etc/default/grub` so it looks like this: `GRUB_CMDLINE_LINUX_DEFAULT="quiet acpi_osi=Linux pcie_port_pm=off"`
+
+- regenerate grub config file with: `grub-mkconfig -o /boot/grub/grub.cfg`
+
+- reboot
+
+This solves the issue, in terms of not getting the errors anymore, and also having the card working after suspend, which wasn't working before.
+
+One problem still remains. That's when the card is used, and you suspend it. On my end, screen just stays blank. 
+
+This is not a problem for me though, since I don't use the card that often, and when I do, I can just close the app/primusrun, and start it after suspend, which will work.
