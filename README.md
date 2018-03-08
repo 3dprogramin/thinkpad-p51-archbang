@@ -22,9 +22,9 @@ experience, with the [Lenovo ThinkPad P51](https://www3.lenovo.com/us/en/laptops
 **Software**
 
 - ArchBang OS
-- Linux kernel 4.14.19-1-lts
+- Linux kernel 4.14.24-1-lts
 - openbox 3.6.1-3
-- systemd 237.31-1
+- systemd 237.64-1
 
 For more info about the system check the **systeminfo** folder
 
