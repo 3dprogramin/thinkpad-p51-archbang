@@ -227,3 +227,10 @@ This solves the issue, in terms of not getting the errors anymore, and also havi
 One problem still remains. That's when the card is used, and you suspend it. On my end, screen just stays blank. 
 
 This is not a problem for me though, since I don't use the card that often, and when I do, I can just close the app/primusrun, and start it after suspend, which will work.
+
+Closer inspection
+-------
+
+After looking more closely at `journalctl` looks like the argument is enabling the
+card on suspension and disabling it on resume. Which makes sense why the card is not 
+working anymore, if it's enabled while suspension.
