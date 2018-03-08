@@ -10,4 +10,4 @@ Got inspired from [linuxbabe.com](https://www.linuxbabe.com/virtualbox/a-start-j
 The idea is to disable the service that gives the timeout
 
 - Find out with `ifconfig` the exact name of the card. In my case, it's `enp0s31f6`
-- Use systemd to disable the service: `systemctl disable dhcpcd@enp0s31f6.service`
+- Use systemd to disable the dhcpcd service for the card: `systemctl disable dhcpcd@enp0s31f6.service`
