@@ -1,18 +1,7 @@
 ## About
 
-Recently, I got a new laptop, [Lenovo ThinkPad P51](https://www3.lenovo.com/us/en/laptops/thinkpad/thinkpad-p/P51/p/22TP2WPWP51)
-
-Windows 10 Pro was preinstalled on it, and I did used it a few months 
-with Windows because I had to wait the 1 TB SSD to arrive. Time came 
-though to install [ArchBang](https://sourceforge.net/projects/archbang/)
-, my favorite linux distro. Got dual-boot now, with the help of grub.
-
-ArchBang is very lightweight OS, and has lots of advantages over Windows, 
-but you do have to take care of your own dishes, and do some work to 
-have everything into place.
-
-In this repo, you'll find issues & fixes that I've encountered in my 
-path, with this laptop and ArchBang linux.
+In this repo, you'll find issues & fixes I've encountered in my 
+experience, with the [Lenovo ThinkPad P51](https://www3.lenovo.com/us/en/laptops/thinkpad/thinkpad-p/P51/p/22TP2WPWP51) and [ArchBang](https://sourceforge.net/projects/archbang/) linux.
 
 
 ## System Info
