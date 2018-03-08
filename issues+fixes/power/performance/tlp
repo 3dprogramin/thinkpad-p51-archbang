@@ -66,7 +66,7 @@ CPU_HWP_ON_BAT=balance_power
 # Values are stated as a percentage of the available performance.
 # Requires an Intel Core i processor with intel_pstate driver.
 CPU_MIN_PERF_ON_AC=0
-CPU_MAX_PERF_ON_AC=100
+CPU_MAX_PERF_ON_AC=99
 CPU_MIN_PERF_ON_BAT=0
 CPU_MAX_PERF_ON_BAT=60
 
@@ -75,7 +75,7 @@ CPU_MAX_PERF_ON_BAT=60
 # Important:
 # - This may conflict with your distribution's governor settings
 # - A value of 1 does *not* activate boosting, it just allows it
-CPU_BOOST_ON_AC=1
+CPU_BOOST_ON_AC=0
 CPU_BOOST_ON_BAT=0
 
 # Minimize number of used CPU cores/hyper-threads under light load conditions:
