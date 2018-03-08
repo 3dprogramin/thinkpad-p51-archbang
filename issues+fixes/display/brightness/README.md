@@ -32,3 +32,17 @@ I managed to set it using **xrandr** using this command ```xrandr --output eDP-1
 ----------
 
 Ability to set brightness from keyboard, using hotkeys, will come soon
+
+After NVIDIA driver installation
+----------
+
+Once I got the GPU going, `xbacklight` started to work.
+
+This method is much better. The previous one, using xrandr, is indeed setting the brightness, but when you set
+it over 1, the white is much too bright. The max you could go, and still see something, would be 1.3
+
+With `xbacklight -inc 10` or `xbacklight -dec 10` you can increase or decrease the brightness
+very easily.
+
+I've created keyboard shortcuts, for the `FN+F5` and `FN+F6` key combinations, because that's how
+it would work on windows, and works very good.
