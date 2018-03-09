@@ -23,3 +23,12 @@ yaourt obkey
 obkey has a nice GUI interface, which allows you to set actions for certain key combinations, including ***execution*** of commands, which is what you need
 
 should be pretty straight forward from here on
+
+
+### After NVIDIA driver installation
+After GPU installation, alsamixer showed the settings in a different way then it did previously.
+
+Don't have **Mic** anymore, but I have **Capture** instead. Toggling through amixer works in the same way, just replace Mic with Capture.
+
+One awesome thing also changed is the LED of the Mic button works now. Turns on (red) when mic is muted.
+
