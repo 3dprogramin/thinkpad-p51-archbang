@@ -31,27 +31,35 @@ For more info about the system check the **systeminfo** folder
 
 ## Issues
 
+**Power management**
 - ~~set performance/battery saving~~
 - ~~set battery threshold~~
 
+**Keyboard**
 - ~~touchpad tapping & natural scroll not working~~
 - ~~select (home, end) with numpad not working~~
 - ~~mute mic button not working~~
+- ~~sound volume increase/decrease and mute buttons not working ~~
 - ~~print button not taking screenshot~~
 - ~~set backlight of keyboard programmatically~~
 
+**OS**
 - ~~notifications not showing up in window manager~~
+- ~~'A start job is running for enp0s31f6...' - at boot 
+time~~
 
+**Display**
 - ~~set brightness of display~~
 
+**GPU**
 - ~~NVIDIA video card not working, currently running only integrated Intel card~~
 - ~~NVIDIA card works now, but intel doesn't, getting bumblebee working is the next step~~
 - ~~* NVIDIA card (optirun/primusrun) not working after getting out of RAM suspend~~
 
-- ~~'A start job is running for enp0s31f6...'~~
+- because now NVIDIA card gets enabled in suspend mode, looks like battery gets drained. Needs further investigation
 
-
-- fingerprint scanner not working - although there is a prototype available [here](https://github.com/nmikhailov/Validity90/tree/master/prototype)
+**Misc**
+- fingerprint scanner not working - although there is a prototype available [here](https://github.com/nmikhailov/Validity90/tree/master/prototype) which looks promising
 
 Check the **issues+fixes** folder for more details
 
