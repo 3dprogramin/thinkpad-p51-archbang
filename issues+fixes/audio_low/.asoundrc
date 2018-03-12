@@ -1,0 +1,8 @@
+pcm.louder {
+	type plug
+	slave.pcm "dmix"
+	ttable.0.0 1.7
+	ttable.1.1 1.7
+}
+
+pcm.!default "louder"

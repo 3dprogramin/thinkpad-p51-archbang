@@ -55,6 +55,7 @@ time~~
 - ~~NVIDIA video card not working, currently running only integrated Intel card~~
 - ~~NVIDIA card works now, but intel doesn't, getting bumblebee working is the next step~~
 - ~~* NVIDIA card (optirun/primusrun) not working after getting out of RAM suspend~~
+- ~~hashcat not recognizing card, opencl package missing~~
 
 - because now NVIDIA card gets enabled in suspend mode, looks like battery gets drained. Needs further investigation
 

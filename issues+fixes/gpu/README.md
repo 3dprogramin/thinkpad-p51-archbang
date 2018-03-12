@@ -234,3 +234,32 @@ Closer inspection
 After looking more closely at `journalctl` looks like the kernel argument makes bbswitch 
 enable the card on suspension and disable it on resume. Which makes sense why the card is not 
 working anymore, if it's enabled/working while suspension.
+
+
+## Hashcat
+
+Hashcat requires an opencl package.
+
+The one I've found to work just fine is `community/beignet`
+Found it [here](https://bbs.archlinux.org/viewtopic.php?id=231365)
+
+Example for cracking WPA2: `primusrun hashcat -m 2500 ~/Desktop/out.hccapx ~/Documents/hacking/wordlist/rockyou.txt`
+
+Here are the results:
+```
+Session..........: hashcat                       
+Status...........: Quit
+Hash.Type........: WPA/WPA2
+Hash.Target......: /home/icebox/Desktop/out.hccapx
+Time.Started.....: Mon Mar 12 22:53:30 2018 (1 sec)
+Time.Estimated...: Mon Mar 12 22:57:34 2018 (4 mins, 3 secs)
+Guess.Base.......: File (/home/icebox/Documents/hacking/wordlist/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.Dev.#1.....:    58084 H/s (10.88ms) @ Accel:32 Loops:16 Thr:1024 Vec:1
+Recovered........: 0/4 (0.00%) Digests, 0/1 (0.00%) Salts
+Progress.........: 223272/14344384 (1.56%)
+Rejected.........: 223272/223272 (100.00%)
+Restore.Point....: 0/14344384 (0.00%)
+Candidates.#1....: 123456789 -> sunflower11
+HWMon.Dev.#1.....: Temp: 47c Util: 99% Core:1150MHz Mem:2505MHz Bus:16
+```
