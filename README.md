@@ -45,11 +45,11 @@ For more info about the system check the **systeminfo** folder
 
 **OS**
 - ~~notifications not showing up in window manager~~
-- ~~'A start job is running for enp0s31f6...' - at boot 
-time~~
+- ~~'A start job is running for enp0s31f6...' - at boot time~~
 
 **Display**
 - ~~set brightness of display~~
+- HDMI get keyboard shortcuts to work and auto-switch on connection through udev
 
 **GPU**
 - ~~NVIDIA video card not working, currently running only integrated Intel card~~
@@ -61,6 +61,7 @@ time~~
 
 **Misc**
 - fingerprint scanner not working - although there is a prototype available [here](https://github.com/nmikhailov/Validity90/tree/master/prototype) which looks promising
+- Firefox not saving "Remember me" passwords
 
 Check the **issues+fixes** folder for more details
 
