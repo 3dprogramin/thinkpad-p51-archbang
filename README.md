@@ -49,7 +49,7 @@ For more info about the system check the **systeminfo** folder
 
 **Display**
 - ~~set brightness of display~~
-- HDMI get keyboard shortcuts to work and auto-switch on connection through udev
+- HDMI auto-switch on connect (udev), keyboard shortcuts working would also be nice
 
 **GPU**
 - ~~NVIDIA video card not working, currently running only integrated Intel card~~
