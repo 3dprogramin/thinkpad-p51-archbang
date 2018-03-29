@@ -20,3 +20,10 @@ In short, to fix it, just run:
 ```
 echo "(sleep 2 && dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY) &" >> ~/.config/openbox/autostart
 ```
+
+Update
+---
+
+I had to reinstall the OS, and the above wasn't enough
+
+Installing `notify-osd` package solved it
