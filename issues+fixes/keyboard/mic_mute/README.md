@@ -10,7 +10,7 @@ Mute mic button doesn't do anything
 
 First, make sure you can toggle the mic by running this command in terminal:
 ```bash
-amixer sset Mic toggle
+amixer sset Capture toggle
 ```
 To verify if it works, run ***alsa*** in terminal and above Mic you should see it change from MM to 00
 
