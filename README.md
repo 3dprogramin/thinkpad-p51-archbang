@@ -60,6 +60,7 @@ For more info about the system check the **systeminfo** folder
 - because now NVIDIA card gets enabled in suspend mode, looks like battery gets drained. Needs further investigation
 
 **Misc**
+- ~~HTTP(s) requests are loading very slow, after disconnecting from VPN (PPTP)~~
 - fingerprint scanner not working - although there is a prototype available [here](https://github.com/nmikhailov/Validity90/tree/master/prototype) which looks promising
 - Firefox not saving "Remember me" passwords
 
