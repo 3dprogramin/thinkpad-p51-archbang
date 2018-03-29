@@ -25,7 +25,7 @@ The links above are very important, because depending on your card, you might ne
 
 - `sudo nvidia-xconfig` - this creates a  Xorg config file, /etc/X11/Xorg.conf
 
-- add 2 lines to the bottom of the `~/.xinitrc` file like [NVIDIA_Optimus#Using_nvidia](https://wiki.archlinux.org/index.php/NVIDIA_Optimus#Using_nvidia)
+- add 2 lines to the top of the `~/.xinitrc` file like [NVIDIA_Optimus#Using_nvidia](https://wiki.archlinux.org/index.php/NVIDIA_Optimus#Using_nvidia)
 
 - reboot
 
