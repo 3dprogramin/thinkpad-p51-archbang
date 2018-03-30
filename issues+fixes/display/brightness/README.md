@@ -46,3 +46,27 @@ very easily.
 
 I've created keyboard shortcuts, for the `FN+F5` and `FN+F6` key combinations, because that's how
 it would work on windows, and works very good.
+
+After OS restart
+---
+
+I had to reinstall my linux OS, and I was expecting it to work after the NVIDIA driver installation, well ... it didn't
+
+The error I was getting, was the one I got from the beginning, which is `No outputs have backlight property`
+
+The good news is that, compared to before, I had the backlight folder `/sys/class/backlight/intel_backlight` in other words the OS was
+recognizing the backlight, but xbacklight wasn't
+
+[Here](https://wiki.archlinux.org/index.php/backlight#xbacklight) is the solution for xbacklight
+
+The idea is append to `/etc/X11/xorg.conf` the following:
+```
+Section "Device"
+    Identifier  "Card0"
+    Driver      "intel"
+    Option      "Backlight"  "intel_backlight"
+EndSection
+```
+
+**OBS:** If `/etc/X11/xorg.conf` doesn't exist, create it and add the content from above, it won't mess the GPU drivers
+
