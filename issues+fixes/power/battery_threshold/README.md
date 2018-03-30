@@ -11,7 +11,7 @@ we'll be able to achieve the same thing
 
 Install the packages
 ```
-sudo pacman -S tlp acpi_call-lts tpacpi-bat tp_smapi smartmontools acpi_call
+sudo pacman -S tlp acpi_call-lts tpacpi-bat tp_smapi smartmontools acpi_call tp_smapi-lts
 ```
 
 To test if everything was installed right, and if the battery is 
