@@ -46,6 +46,7 @@ For more info about the system check the **systeminfo** folder
 **OS**
 - ~~notifications not showing up in window manager~~
 - ~~'A start job is running for enp0s31f6...' - at boot time~~
+- ~~'mount(2) system call failed: Structure needs cleaning.' after OS reinstall on multimedia partition~~
 
 **Display**
 - ~~set brightness of display~~
