@@ -50,6 +50,7 @@ For more info about the system check the **systeminfo** folder
 
 **Display**
 - ~~set brightness of display~~
+
 - HDMI auto-switch on connect (udev), keyboard shortcuts working would also be nice
 
 **GPU**
@@ -62,8 +63,9 @@ For more info about the system check the **systeminfo** folder
 
 **Misc**
 - ~~HTTP(s) requests are loading very slow, after disconnecting from VPN (PPTP)~~
+- ~~Firefox not saving "Remember me" passwords~~ - solved with reinstall
+
 - fingerprint scanner not working - although there is a prototype available [here](https://github.com/nmikhailov/Validity90/tree/master/prototype) which looks promising
-- Firefox not saving "Remember me" passwords
 
 Check the **issues+fixes** folder for more details
 
