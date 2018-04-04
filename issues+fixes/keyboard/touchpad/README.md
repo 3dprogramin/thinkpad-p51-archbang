@@ -144,7 +144,6 @@ running it as a service at startup. ***~/.config/openbox/autostart***
 will do the job as well.
 
 
-TrackPoint
---------
-
-Updated the bash file to set acceleration of .3 to trackpoint
+Palm detection
+-----
+After I've reinstalled my OS, I saw different options comming from xinput, in regards to the touchpad. Only after a while, when I realized the palm detection wasn't working, figured out why. With the OS reinstall, I've installed the synaptics driver as well, so libinput wasn't being used but the synaptics driver. After removing the synaptics package `sudo pacman -R xf86-input-synaptics` palm detection was back on.
