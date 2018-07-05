@@ -147,3 +147,16 @@ will do the job as well.
 Palm detection
 -----
 After I've reinstalled my OS, I saw different options comming from xinput, in regards to the touchpad. Only after a while, when I realized the palm detection wasn't working, figured out why. With the OS reinstall, I've installed the synaptics driver as well, so libinput wasn't being used but the synaptics driver. After removing the synaptics package `sudo pacman -R xf86-input-synaptics` palm detection was back on.
+
+Tapping
+----
+Updated the system on 04.07.2018 and tapping didn't worked anymore. Listing the properties of the touchpad showed also missing touchpad option. 
+
+To fix it, I followed [this](https://wiki.archlinux.org/index.php/Libinput#Via_Xorg_configuration_file) documentation, and set the tapping on through `/etc/X11/xorg.conf.d/10-synaptics.conf` config file with this:
+
+```
+	...
+	Option "Tapping" "on"
+EndSection
+
+```
