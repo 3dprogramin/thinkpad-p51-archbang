@@ -66,6 +66,8 @@ For more info about the system check the **systeminfo** folder
 - ~~Firefox not saving "Remember me" passwords~~ - solved with reinstall of OS
 - ~~HP printer not working~~
 - ~~fingerprint scanner not working - although there is a prototype available [here](https://github.com/nmikhailov/Validity90/tree/master/prototype) which looks promising~~
+- ~~disable auto-login~~
+- ~~login with fingerprint~~
 
 - teamviewer13 not starting
 
