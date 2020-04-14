@@ -1,4 +1,4 @@
-Issue
+Issue (not happening with last reinstall)
 ---
 
 Sound too low, compared to windows 10
