@@ -6,6 +6,16 @@ Fingerprint scanner not working with `fprint` (libfprint)
 Fix
 ----
 
+### UPDATE 2020
+
+Trying to install the latest version of `fprintd` will throw an error because of `libfprint` dependency which is in conflict with the patch. In order to solve that do
+
+`yay -S downgrade`
+
+`downgrade fprintd` - install version `0.9.0-1`
+
+---
+
 Install `fprintd` and and `libfprint-vfs0097-git`
 
 `fprintd` is a fingerprint manager daemon, which handles the fingerprinting on demand and other stuff.
