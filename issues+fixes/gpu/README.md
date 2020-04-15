@@ -13,9 +13,13 @@ Fix
 ### Most importantly, you should read this [NVIDIA](https://wiki.archlinux.org/index.php/NVIDIA), [NVIDIA Optimus](https://wiki.archlinux.org/index.php/NVIDIA_Optimus), [Bumblebee](https://wiki.archlinux.org/index.php/Bumblebee)
 The links above are very important, because depending on your card, you might need different drivers, although for ThinkPad P51, what you'll read below should work without problems.
 
+### UPDATE 2020
+
+Skype is using gnome keyring in order to authenticate the user, without having to retype the real skype password all the time. After the GPU / display drivers update, I noticed that doesn't work anymore.
+
+The fix is, add `dbus-update-activation-environment --systemd DISPLAY` to `~/.xinitrc`
+
 ---------------------
-
-
 
 - Install the driver: `sudo pacman -S nvidia-lts lib32-nvidia-utils nvidia-settings`
 
