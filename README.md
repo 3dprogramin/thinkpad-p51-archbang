@@ -48,7 +48,12 @@ For more info about the system check the **systeminfo** folder
 - ~~'A start job is running for enp0s31f6...' - at boot time~~
 - ~~'mount(2) system call failed: Structure needs cleaning.' after OS reinstall on multimedia partition~~
 
+**Audio**
+
+- ~~sound either not working correctly or noizzy~~
+
 **Display**
+
 - ~~set brightness of display~~
 
 - HDMI auto-switch on connect (udev), keyboard shortcuts working would also be nice
