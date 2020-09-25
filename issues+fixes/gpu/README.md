@@ -27,7 +27,23 @@ The fix is, add `dbus-update-activation-environment --systemd DISPLAY` to `~/.xi
 
 - reboot
 
-- `sudo nvidia-xconfig` - this creates a  Xorg config file, /etc/X11/Xorg.conf
+- `sudo nvidia-xconfig` - this creates a  Xorg config file, /etc/X11/xorg.conf
+
+- use `lspci` and make sure the BusIDs are matching inside xorg.conf file
+
+- ```
+  Section "Device"
+      Identifier     "Card0"
+      Driver         "intel"
+      BusID          "PCI:0:2:0"
+  EndSection
+  
+  Section "Device"
+      Identifier     "Card1"
+      Driver         "nvidia"
+      BusID          "PCI:1:0:0"
+  EndSection
+  ```
 
 - add 2 lines to the top of the `~/.xinitrc` file like [NVIDIA_Optimus#Using_nvidia](https://wiki.archlinux.org/index.php/NVIDIA_Optimus#Using_nvidia)
 
@@ -91,6 +107,23 @@ To have the ability to switch between cards, we're going to use [bumblebee](http
 - Add your user to bumblebee group: `sudo gpasswd -a your_user bumblebee`
 
 - Enable service: `systemctl enable bumblebeed.service`
+
+- just like with xorg.conf above, make sure the BusID is matching in `/etc/bumblebee/xorg.conf.nvidia`
+
+  ```
+  Section "Device"
+      Identifier  "DiscreteNvidia"
+      Driver      "nvidia"
+      VendorName  "NVIDIA Corporation"
+      Option "ProbeAllGpus" "false"
+      Option "NoLogo" "true"
+      Option "UseEDID" "false"
+      Option "UseDisplayDevice" "none"
+  
+      # added up
+      BusID "PCI:01:00:0"
+  EndSection
+  ```
 
 - reboot
 

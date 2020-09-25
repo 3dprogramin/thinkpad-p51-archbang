@@ -34,6 +34,7 @@ For more info about the system check the **systeminfo** folder
 **Power management**
 - ~~set performance/battery saving~~
 - ~~set battery threshold~~
+- docking station (including HDMI issue)
 
 **Keyboard**
 - ~~touchpad tapping & natural scroll not working~~
@@ -55,8 +56,8 @@ For more info about the system check the **systeminfo** folder
 **Display**
 
 - ~~set brightness of display~~
+- ~~multihead through HDMI~~
 
-- HDMI auto-switch on connect (udev), keyboard shortcuts working would also be nice
 
 **GPU**
 - ~~NVIDIA video card not working, currently running only integrated Intel card~~
