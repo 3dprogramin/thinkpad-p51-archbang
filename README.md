@@ -52,6 +52,7 @@ For more info about the system check the **systeminfo** folder
 **Audio**
 
 - ~~sound either not working correctly or noizzy~~
+- ~~audio device usage 100% at all times~~
 
 **Display**
 
