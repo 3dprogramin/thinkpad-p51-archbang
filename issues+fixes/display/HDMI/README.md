@@ -31,3 +31,21 @@ xrandr --auto --output VIRTUAL2 --mode VIRTUAL2.543-1920x1080 --rate 60 --right-
 ```
 
 Will make HDMI connected monitor show as right of laptop's screen, a *continuous* screen.
+
+#### Multihead 2 monitors
+
+- lxrandr, set given VIRTUAL as active
+- arandr, other VIRTUAL set as active
+- run `multihead2.sh`
+
+## Issue (and fix)
+
+If above solution works for you without solutions, you're all good.
+For me, it worked only partially. In short time, I realized that my cursor (on the 2nd screen) is lagging like crazy, when touchpad is used. This was also used in combination with the `ThinkPad Dock Gen 3` from Lenovo.
+
+Besides that, some videos that were high resolutions weren't playing very well, some weren't playing in full-screen at all.
+
+**To sort it out, here's what I did:**
+
+- disable bumblebee from starting on startup, and start it manually when required
+- add `nvidia-drm.modeset=1` to kernel parameters (it was missing on my end, but it is being mentioned in [NVIDIA Arch docs](https://wiki.archlinux.org/index.php/NVIDIA#DRM_kernel_mode_setting))
