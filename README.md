@@ -10,7 +10,7 @@ experience, with the [Lenovo ThinkPad P51](https://www3.lenovo.com/us/en/laptops
 
 - Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
 - 32 GB DDR4
-- 1.25 TB SSD (1 TB & 256 GB)
+- 1.75 TB SSD (256GB, 500GB & 1TB)
 - NVIDIA Quadro M1200M 4GB GDDR5
 - Integrated Intel Graphics Card
 - 15.6" FHD (1920x1080), anti-glare, IPS display
@@ -22,9 +22,9 @@ experience, with the [Lenovo ThinkPad P51](https://www3.lenovo.com/us/en/laptops
 **Software**
 
 - ArchBang OS
-- Linux kernel 4.14.31-1
-- openbox 3.6.1-3
-- systemd 238.51-1
+- Linux kernel 5.4.67-1-lts
+- openbox 3.6.1-7
+- systemd 246.6-1
 
 For more info about the system check the **systeminfo** folder
 
