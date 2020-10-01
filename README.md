@@ -75,7 +75,7 @@ For more info about the system check the **systeminfo** folder
 - ~~fingerprint scanner not working - although there is a prototype available [here](https://github.com/nmikhailov/Validity90/tree/master/prototype) which looks promising~~
 - ~~disable auto-login~~
 - ~~login with fingerprint~~
-
+- ~~CTRL+ALT+Left moves desktops in loop (3,2,1,4,3,2,1,4...) instead of stopping at desktop 1 (3,2,1, stop)~~
 - teamviewer13 not starting
 
 Check the **issues+fixes** folder for more details
