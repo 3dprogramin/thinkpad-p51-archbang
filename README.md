@@ -76,7 +76,7 @@ For more info about the system check the **systeminfo** folder
 - ~~disable auto-login~~
 - ~~login with fingerprint~~
 - ~~CTRL+ALT+Left moves desktops in loop (3,2,1,4,3,2,1,4...) instead of stopping at desktop 1 (3,2,1, stop)~~
-- teamviewer13 not starting
+- ~~teamviewer15 not starting~~
 
 Check the **issues+fixes** folder for more details
 
