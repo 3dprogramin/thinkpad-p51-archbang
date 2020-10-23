@@ -1,7 +1,7 @@
 ## About
 
 In this repo, you'll find issues & fixes I've encountered during my
-experience with [Lenovo ThinkPad P51](https://www3.lenovo.com/us/en/laptops/thinkpad/thinkpad-p/P51/p/22TP2WPWP51) and [ArchBang](https://sourceforge.net/projects/archbang/) linux.
+experience with [Lenovo ThinkPad P51](https://www3.lenovo.com/us/en/laptops/thinkpad/thinkpad-p/P51/p/22TP2WPWP51) and [ArchBang](https://sourceforge.net/projects/archbang/) Linux.
 
 
 ## System Info
@@ -67,7 +67,7 @@ For more info about the system check the **systeminfo** folder
 - ~~* NVIDIA card (optirun/primusrun) not working after getting out of RAM suspend~~
 - ~~hashcat not recognizing card, opencl package missing~~
 
-- because now NVIDIA card gets enabled in suspend mode, looks like battery gets drained. Needs further investigation
+- ~~because now NVIDIA card gets enabled in suspend mode, looks like battery gets drained. Needs further investigation~~
 
 **Misc**
 - ~~HTTP(s) requests are loading very slow, after disconnecting from VPN (PPTP)~~
