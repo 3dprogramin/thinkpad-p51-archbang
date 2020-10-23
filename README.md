@@ -1,7 +1,7 @@
 ## About
 
-In this repo, you'll find issues & fixes I've encountered in my 
-experience, with the [Lenovo ThinkPad P51](https://www3.lenovo.com/us/en/laptops/thinkpad/thinkpad-p/P51/p/22TP2WPWP51) and [ArchBang](https://sourceforge.net/projects/archbang/) linux.
+In this repo, you'll find issues & fixes I've encountered during my
+experience with [Lenovo ThinkPad P51](https://www3.lenovo.com/us/en/laptops/thinkpad/thinkpad-p/P51/p/22TP2WPWP51) and [ArchBang](https://sourceforge.net/projects/archbang/) linux.
 
 
 ## System Info
