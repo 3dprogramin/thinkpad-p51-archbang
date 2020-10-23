@@ -34,9 +34,10 @@ For more info about the system check the **systeminfo** folder
 **Power management**
 - ~~set performance/battery saving~~
 - ~~set battery threshold~~
-- docking station (including HDMI issue)
+- docking station (udev rules on connect / disconnect, ~~including HDMI issue)~~
 
 **Keyboard**
+
 - ~~touchpad tapping & natural scroll not working~~
 - ~~select (home, end) with numpad not working~~
 - ~~mute mic button not working~~
