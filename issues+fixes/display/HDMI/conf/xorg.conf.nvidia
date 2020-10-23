@@ -12,7 +12,10 @@ Section "Device"
     VendorName  "NVIDIA Corporation"
     Option "ProbeAllGpus" "false"
     Option "NoLogo" "true"
-    Option "AllowEmptyInitialConfiguration"
+    Option "UseEDID" "true"                 # Bumblebee defaults to false
+    Option "AllowEmptyInitialConfiguration" # Add this line
+#   Option "UseDisplayDevice" "none"        # Remove or comment out this line
+    
     BusID "PCI:01:00:0"
 EndSection
 

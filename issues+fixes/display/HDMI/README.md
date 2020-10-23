@@ -49,3 +49,5 @@ Besides that, some videos that were high resolutions weren't playing very well, 
 
 - disable bumblebee from starting on startup, and start it manually when required
 - add `nvidia-drm.modeset=1` to kernel parameters (it was missing on my end, but it is being mentioned in [NVIDIA Arch docs](https://wiki.archlinux.org/index.php/NVIDIA#DRM_kernel_mode_setting))
+
+**Check the dock folder for more on this**
