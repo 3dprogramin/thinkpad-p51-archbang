@@ -46,3 +46,9 @@ I tried to disable the laptop's display with `arandr` and have only the monitors
 I almost never got a chance to actually get nvidia-settings running.
 
 After using the external monitors with `optirun intel-virtual-output` (NVIDIA card), I was able to start the nvidia-settings with this command `optirun nvidia-settings -c :8`
+
+## 3 displays (2 monitors & laptop)
+
+Created script that allows even better *work capabilities* by using 2 monitors and laptop's display also.
+
+Check **multihead3** folder in repository, it includes auxiliary scripts / config files too
