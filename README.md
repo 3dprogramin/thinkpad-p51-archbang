@@ -44,8 +44,10 @@ For more info about the system check the **systeminfo** folder
 - ~~sound volume increase/decrease and mute buttons not working~~
 - ~~print button not taking screenshot~~
 - ~~set backlight of keyboard programmatically~~
+- ~~show caps lock indicator when key is pressed~~
 
 **OS**
+
 - ~~notifications not showing up in window manager~~
 - ~~'A start job is running for enp0s31f6...' - at boot time~~
 - ~~'mount(2) system call failed: Structure needs cleaning.' after OS reinstall on multimedia partition~~
