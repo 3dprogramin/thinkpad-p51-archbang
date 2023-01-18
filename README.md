@@ -68,10 +68,14 @@ For more info about the system check the **systeminfo** folder
 - ~~NVIDIA card works now, but intel doesn't, getting bumblebee working is the next step~~
 - ~~* NVIDIA card (optirun/primusrun) not working after getting out of RAM suspend~~
 - ~~hashcat not recognizing card, opencl package missing~~
-
 - ~~because now NVIDIA card gets enabled in suspend mode, looks like battery gets drained. Needs further investigation~~
 
+**Bluetooth**
+
+- ~~bluetooth speaker not connecting~~
+
 **Misc**
+
 - ~~HTTP(s) requests are loading very slow, after disconnecting from VPN (PPTP)~~
 - ~~Firefox not saving "Remember me" passwords~~ - solved with reinstall of OS
 - ~~HP printer not working~~
