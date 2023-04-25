@@ -1,19 +1,29 @@
 Issue
 -----
 
-HP DeskJet printer requires some setup in order to get it working
+Xerox WorkCentre 3025 printer & scanner setup
 
 Solution
 -----
 
 - install cups `pacman -S cups`
-- add your user to `lpadmin` group
-- start and enable cups
-- navigate to `http://localhost:631` to configure your printer
-- [this](https://gist.github.com/edoz90/660a2a67b9bc8a815ba537530137636a) url is also useful
+- add your (OS) user to `lpadmin` group
+- start the cups service: `systemctl start cups`
+- [Download and install](https://www.support.xerox.com/en-us/product/workcentre-3025/content/129628) the official Linux drivers for Xerox WorkCentre 3025 
+  - run `install.sh`
+
+- navigate to `http://localhost:631` to add and configure the printer.
+  - the correct printer will show up only after the (official) drivers above are installed
+
+- install the sane package for scanning functionality
+  - `pacman -S extra/sane`
 
 
-Scanning
+## Print
+
+If the steps above were done with success, the printer should now show up when `CTRL+P` is pressed, pretty much everywhere.
+
+Scan
 ---
 
-For scanning, I'm using the printers web interface, looks like it's the easiest way to do it
+In order to scan use the following `scanimage -o scanned_doc.png`
