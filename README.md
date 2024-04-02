@@ -27,6 +27,7 @@ experience with [Lenovo ThinkPad P51](https://www3.lenovo.com/us/en/laptops/thin
 - systemd 246.6-1
 
 For more info about the system check the **systeminfo** folder
+*Information inside systeminfo folder is not kept up to date for security reasons*
 
 
 ## Issues
@@ -85,6 +86,7 @@ For more info about the system check the **systeminfo** folder
 - ~~CTRL+ALT+Left moves desktops in loop (3,2,1,4,3,2,1,4...) instead of stopping at desktop 1 (3,2,1, stop)~~
 - ~~teamviewer15 not starting~~
 - ~~Openbox applications menu not working (right click on desktop)~~
+- ~~tint2 process crashing right after it starts~~
 
 Check the **issues+fixes** folder for more details
 
