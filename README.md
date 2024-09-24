@@ -57,6 +57,7 @@ For more info about the system check the **systeminfo** folder
 
 - ~~sound either not working correctly or noizzy~~
 - ~~audio device usage 100% at all times~~
+- ~~play sound when USB device is connected / disconnected~~
 
 **Display**
 
