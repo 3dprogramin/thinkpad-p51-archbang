@@ -15,3 +15,8 @@ ACTION=="remove", SUBSYSTEM=="usb", RUN+="/usr/bin/aplay /home/icebox/Documents/
 ```
 
 Modify the audio file paths accordingly, which is the argument passed to aplay
+
+## UPDATE
+
+I used this for around 1 week after which for me it became annoying.
+However, in some situations it might be useful so keeping it here.
